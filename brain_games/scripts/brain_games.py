@@ -1,12 +1,11 @@
 #!/usr/bin/env python
 
 
-def print_welcome():
-    print("Welcome to the Brain Games!")
+from brain_games.cli import welcome_user
 
 
 def main():
-    print_welcome()
+    welcome_user()
 
 
 if __name__ == '__main__':
