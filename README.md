@@ -5,4 +5,4 @@
 
 The project demo:
 "Even or not":
-[![asciicast](https://asciinema.org/a/502931.svg)](https://asciinema.org/a/502931)
+https://asciinema.org/a/502931
