@@ -16,6 +16,8 @@ def even_game():
     finish = False
     mistake = False
 
+    print("Answer \"yes\" if the number is even, otherwise answer \"no\".")
+
     while not finish and not mistake:
         question = get_question()
         correct_answer = get_correct_answer(question)
