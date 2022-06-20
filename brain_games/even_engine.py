@@ -11,7 +11,7 @@ def welcome_user():
 
 
 def generate_number():
-    return random.randint(0, 31)
+    return random.randint(0, 100)
 
 
 def is_correct(random_number, user_answer):
