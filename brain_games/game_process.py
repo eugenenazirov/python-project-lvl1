@@ -27,7 +27,7 @@ def game_turn(question, correct_answer):
         print("Correct!")
         return True
     else:
-        print(f"{user_answer} is wrong answer ;(. Correct answer was {opposite_answer}")
+        print(f"\'{user_answer}\' is wrong answer ;(. Correct answer was \'{correct_answer}\'")
         return False
 
 
