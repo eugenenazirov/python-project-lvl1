@@ -1,4 +1,6 @@
-from brain_games.games.even_engine import *
+#!/usr/bin/env python
+
+from brain_games.games.even_engine import even_game
 
 
 def main():
