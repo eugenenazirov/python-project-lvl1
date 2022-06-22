@@ -9,3 +9,6 @@ https://asciinema.org/a/502931
 
 2. "Calculator":
 https://asciinema.org/a/503019
+
+3. "Find Great Common Divisor":
+https://asciinema.org/a/503546
