@@ -18,11 +18,6 @@ def calculate(first_number, second_number):
     return (action, result)
 
 
-# def get_correct_answer(question_number):
-#     correct_answer = str(question_number)
-#     return correct_answer
-
-
 def calc_game():
     username = welcome_user()
     success = 0
