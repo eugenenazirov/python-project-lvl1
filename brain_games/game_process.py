@@ -10,7 +10,7 @@ def welcome_user():
 
 
 def generate_number():
-    return random.randint(0, 50)
+    return random.randint(1, 50)
 
 
 def is_correct(correct_answer, user_answer):
