@@ -20,13 +20,14 @@ def is_correct(correct_answer, user_answer):
 def game_turn(question, correct_answer):
     print(f"Question: {question}")
 
-    user_answer = prompt.string(f"Your answer: ")
+    user_answer = prompt.string("Your answer: ")
 
     if is_correct(correct_answer, user_answer):
         print("Correct!")
         return True
     else:
-        print(f"\'{user_answer}\' is wrong answer ;(. Correct answer was \'{correct_answer}\'.")
+        print(f"\'{user_answer}\' is wrong answer ;(. \
+            Correct answer was \'{correct_answer}\'.")
         return False
 
 

@@ -1,9 +1,10 @@
-from brain_games.game_process import *
+from brain_games import game_process
 
 
 def get_question():
-    random_number = generate_number()
+    random_number = game_process.generate_number()
     return random_number
+
 
 def get_correct_answer(question_number):
     if question_number % 2 == 0:
@@ -18,7 +19,7 @@ def get_correct_answer(question_number):
 
 
 def prime_game():
-    username = welcome_user()
+    username = game_process.welcome_user()
     success = 0
     finish = False
     mistake = False
@@ -29,7 +30,7 @@ def prime_game():
         question = get_question()
         correct_answer = get_correct_answer(question)
 
-        turn = game_turn(question, correct_answer)
+        turn = game_process.game_turn(question, correct_answer)
         if turn:
             success += 1
         else:
@@ -39,6 +40,6 @@ def prime_game():
             finish = True
 
     if finish:
-        congratulate_user(username)
+        game_process.congratulate_user(username)
     if mistake:
-        fail_user(username)
+        game_process.fail_user(username)

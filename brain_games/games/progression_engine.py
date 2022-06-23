@@ -1,10 +1,10 @@
-from brain_games.game_process import *
+from brain_games import game_process
 from random import randint
 
 
 def get_progression():
     progression_lenght = randint(5, 11)
-    progression_num = generate_number()
+    progression_num = game_process.generate_number()
     progression_step = randint(2, 10)
     progression_list = []
 
@@ -12,6 +12,7 @@ def get_progression():
         progression_list.append(progression_num)
         progression_num += progression_step
     return progression_list
+
 
 def hide_number(progression):
     choosen_num_index = randint(1, len(progression) - 1)
@@ -21,7 +22,7 @@ def hide_number(progression):
 
 
 def progression_game():
-    username = welcome_user()
+    username = game_process.welcome_user()
     success = 0
     finish = False
     mistake = False
@@ -33,7 +34,7 @@ def progression_game():
         question_progression, hidden_number = hide_number(progression)
         correct_answer = str(hidden_number)
 
-        turn = game_turn(question_progression, correct_answer)
+        turn = game_process.game_turn(question_progression, correct_answer)
         if turn:
             success += 1
         else:
@@ -43,6 +44,6 @@ def progression_game():
             finish = True
 
     if finish:
-        congratulate_user(username)
+        game_process.congratulate_user(username)
     if mistake:
-        fail_user(username)
+        game_process.fail_user(username)

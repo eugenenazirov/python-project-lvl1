@@ -1,4 +1,4 @@
-from brain_games.game_process import *
+from brain_games import game_process
 
 
 def find_gcd(first_number, second_number):
@@ -13,7 +13,7 @@ def find_gcd(first_number, second_number):
 
 
 def gcd_game():
-    username = welcome_user()
+    username = game_process.welcome_user()
     success = 0
     finish = False
     mistake = False
@@ -21,12 +21,12 @@ def gcd_game():
     print("Find the greatest common divisor of given numbers.")
 
     while not finish and not mistake:
-        first_number = generate_number()
-        second_number = generate_number()
+        first_number = game_process.generate_number()
+        second_number = game_process.generate_number()
         question_gcd = f"{first_number}, {second_number}"
         correct_answer = str(find_gcd(first_number, second_number))
 
-        turn = game_turn(question_gcd, correct_answer)
+        turn = game_process.game_turn(question_gcd, correct_answer)
         if turn:
             success += 1
         else:
@@ -36,6 +36,6 @@ def gcd_game():
             finish = True
 
     if finish:
-        congratulate_user(username)
+        game_process.congratulate_user(username)
     if mistake:
-        fail_user(username)
+        game_process.fail_user(username)

@@ -1,4 +1,5 @@
-from brain_games.game_process import *
+from brain_games import game_process
+import random
 
 
 def calculate(first_number, second_number):
@@ -19,7 +20,7 @@ def calculate(first_number, second_number):
 
 
 def calc_game():
-    username = welcome_user()
+    username = game_process.welcome_user()
     success = 0
     finish = False
     mistake = False
@@ -27,13 +28,13 @@ def calc_game():
     print("What is the result of the expression?")
 
     while not finish and not mistake:
-        first_number = generate_number()
-        second_number = generate_number()
+        first_number = game_process.generate_number()
+        second_number = game_process.generate_number()
         question_tuple = calculate(first_number, second_number)
         question_str = f"{first_number} {question_tuple[0]} {second_number}"
         correct_answer = str(question_tuple[1])
 
-        turn = game_turn(question_str, correct_answer)
+        turn = game_process.game_turn(question_str, correct_answer)
         if turn:
             success += 1
         else:
@@ -43,6 +44,6 @@ def calc_game():
             finish = True
 
     if finish:
-        congratulate_user(username)
+        game_process.congratulate_user(username)
     if mistake:
-        fail_user(username)
+        game_process.fail_user(username)

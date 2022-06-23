@@ -1,9 +1,10 @@
-from brain_games.game_process import *
+from brain_games import game_process
 
 
 def get_question():
-    random_number = generate_number()
+    random_number = game_process.generate_number()
     return random_number
+
 
 def get_correct_answer(question_number):
     correct_answer = 'yes' if question_number % 2 == 0 else 'no'
@@ -11,7 +12,7 @@ def get_correct_answer(question_number):
 
 
 def even_game():
-    username = welcome_user()
+    username = game_process.welcome_user()
     success = 0
     finish = False
     mistake = False
@@ -22,7 +23,7 @@ def even_game():
         question = get_question()
         correct_answer = get_correct_answer(question)
 
-        turn = game_turn(question, correct_answer)
+        turn = game_process.game_turn(question, correct_answer)
         if turn:
             success += 1
         else:
@@ -32,6 +33,6 @@ def even_game():
             finish = True
 
     if finish:
-        congratulate_user(username)
+        game_process.congratulate_user(username)
     if mistake:
-        fail_user(username)
+        game_process.fail_user(username)
