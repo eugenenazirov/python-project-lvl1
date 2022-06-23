@@ -14,7 +14,7 @@ def get_progression():
     return progression_list
 
 def hide_number(progression):
-    choosen_num_index = randint(1, len(progression))
+    choosen_num_index = randint(1, len(progression) - 1)
     choosen_num = progression[choosen_num_index]
     progression[choosen_num_index] = ".."
     return (progression, choosen_num)
