@@ -23,7 +23,7 @@ def gcd_game():
     while not finish and not mistake:
         first_number = game_process.generate_number()
         second_number = game_process.generate_number()
-        question_gcd = f"{first_number}, {second_number}"
+        question_gcd = f"{first_number} {second_number}"
         correct_answer = str(find_gcd(first_number, second_number))
 
         turn = game_process.game_turn(question_gcd, correct_answer)
