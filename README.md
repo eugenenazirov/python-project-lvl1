@@ -15,3 +15,6 @@ https://asciinema.org/a/503546
 
 4. "Arithmetic Progression":
 https://asciinema.org/a/503663
+
+5. "Is the Number Prime?":
+https://asciinema.org/a/503668
