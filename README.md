@@ -12,3 +12,6 @@ https://asciinema.org/a/503019
 
 3. "Find Great Common Divisor":
 https://asciinema.org/a/503546
+
+4. "Arithmetic Progression":
+https://asciinema.org/a/503663
