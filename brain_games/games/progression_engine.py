@@ -18,7 +18,8 @@ def hide_number(progression):
     choosen_num_index = randint(1, len(progression) - 1)
     choosen_num = progression[choosen_num_index]
     progression[choosen_num_index] = ".."
-    return (progression, choosen_num)
+    progression_str = " ".join(map(str, progression))
+    return (progression_str, choosen_num)
 
 
 def progression_game():
