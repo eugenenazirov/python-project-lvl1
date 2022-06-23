@@ -20,7 +20,6 @@ def hide_number(progression):
     return (progression, choosen_num)
 
 
-
 def progression_game():
     username = welcome_user()
     success = 0
