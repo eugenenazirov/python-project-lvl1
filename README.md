@@ -3,15 +3,20 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)
 
+# Brain Games
 Welcome, to The Brain Games, the Hexlet Course first project!
 There are five simple mind games that you can run in your Terminal.
 
-Requirements:
-OS: Linux, Windows 10 (WSL), MacOS
-Python 3.10
+Install the package with `pip install` and `*repository cloning https link*`. 
+Or clone the repository on your machine and install it by `pip install .`.
+
+##### Requirements:
+- OS: Linux, Windows 10 (WSL), MacOS
+- Python 3.10
+- pip 22.1.12
 
 
-Games demo:
+### Games demo:
 1. "Even or Not":
 https://asciinema.org/a/502931
 
