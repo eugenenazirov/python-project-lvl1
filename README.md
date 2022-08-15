@@ -9,7 +9,7 @@ There are five simple mind games that you can run in your Terminal.
 
 Install the package with `pip install` and `*repository cloning https link*`. 
 
-Or clone the repository on your machine and install it by `pip install .` call it only be in repo directory.
+Or clone the repository on your machine and install it by `pip install .`, call it only being in repo directory.
 
 
 ##### Requirements:
