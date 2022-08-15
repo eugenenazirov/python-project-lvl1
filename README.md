@@ -8,7 +8,9 @@ Welcome, to The Brain Games!
 There are five simple mind games that you can run in your Terminal.
 
 Install the package with `pip install` and `*repository cloning https link*`. 
-Or clone the repository on your machine and install it by `pip install .`.
+
+Or clone the repository on your machine and install it by `pip install .` call it only be in repo directory.
+
 
 ##### Requirements:
 - OS: Linux, Windows 10 (WSL), MacOS
