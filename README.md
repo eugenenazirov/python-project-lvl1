@@ -4,7 +4,7 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)
 
 # Brain Games
-Welcome, to The Brain Games, the Hexlet Course first project!
+Welcome, to The Brain Games!
 There are five simple mind games that you can run in your Terminal.
 
 Install the package with `pip install` and `*repository cloning https link*`. 
